@@ -12,7 +12,7 @@ string shifr(string fiodmy) {
             continue;
         }
         else prev += c;
-    } //cout << prev;
+    } 
 
     int sum_digits = 0;
     int sum_letters;
@@ -26,7 +26,7 @@ string shifr(string fiodmy) {
         else {
             s.insert(prev[i]);
         }
-    } //cout<<'\n'<<s.size()<<' '<<sum_letters<<' '<<num_first_letter;
+    } 
     sum_letters = s.size();
 
     int res = num_first_letter * 256 + sum_digits * 64 + sum_letters;
@@ -38,7 +38,7 @@ string shifr(string fiodmy) {
     if (result.length() < 3) result.insert(0, 1, '0');
     for (char& c : result) {
         if (c >= 'a') c -= 32;
-    } //cout<<result;
+    } 
     return result;
 }
 
